@@ -31,13 +31,16 @@ Alles läuft dann nur im eigenen Browser – perfekt zum Ausprobieren. Jeder Bro
 3. Zum Anmeldeschluss schließt die Anmeldung automatisch (solange ein Admin-Gerät die App offen hat) – oder per Knopf.
 4. Vor Ort: Check-in abhaken, Format prüfen, „Auslosung starten“.
 5. Beamer zeigt `#/live`. Lose aufdecken per Knopf am Handy oder Leertaste am Beamer-Laptop (als Admin angemeldet).
-6. „Turnier starten“ → Konsolen werden automatisch belegt. Spieler melden Ergebnisse, Gegner bestätigt.
-   Die Automatik (Konsolen füllen, K.o.-Runde weiterführen, Sieger küren) läuft auf jedem geöffneten Admin-Gerät.
+6. „Turnier starten“ → Stationen 1–4 werden automatisch belegt. Spieler melden Ergebnisse, Gegner bestätigt.
+   Die Automatik (Stationen füllen, K.o.-Runde weiterführen, Sieger küren) läuft auf jedem geöffneten Admin-Gerät.
+7. **Stationen zuordnen:** Admin → Turnier → bei jedem Spiel über „Station“ auf eine andere Station schieben,
+   auf die **Streamstation** setzen oder in die Warteschlange zurück (= angehalten, wird nicht automatisch belegt).
+   Die Streamstation wird nie automatisch belegt. Spieler sehen auf dem Handy „ON STREAM“, der Beamer markiert sie rot.
 
 ## Anpassen
 - **Teams, Stärken, Farben:** `js/teams.js` (Stärke `r` 0–100 bestimmt Sterne und Lostöpfe).
 - **Haupt-Admin:** `js/config.js` (`OWNER_EMAIL`) **und** `firestore.rules` (gleiche Adresse).
-- **Spiel-Einstellungen:** in der App unter Admin → Einstellungen (bleiben gespeichert).
+- **Spiel-Einstellungen, Anzahl Stationen, Streamstation an/aus + Name:** in der App unter Admin → Einstellungen (bleiben gespeichert).
 - **Wappen:** werden live von Wikipedia geladen; fehlt eins, erscheint ein Badge in Vereinsfarben. Abschaltbar in den Einstellungen.
 
 ## Technik
